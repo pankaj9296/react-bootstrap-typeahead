@@ -1,53 +1,44 @@
 {
-  "name": "react-bootstrap-typeahead",
-  "version": "3.4.6",
-  "description": "React typeahead with Bootstrap styling",
-  "author": "ericgio",
-  "license": "MIT",
-  "main": "lib/index.js",
-  "scripts": {
-    "build": "npm run clean && npm run build:css && npm run build:lib && npm run build:dist && npm run build:example",
-    "build:css": "node ./scripts/buildCSS.js",
-    "build:dist": "webpack --mode development && webpack --mode production",
-    "build:example": "webpack --mode production --config example/webpack.config.js",
-    "build:lib": "babel src --out-dir lib",
-    "check": "npm run lint && npm test",
-    "clean": "rimraf css && rimraf dist && rimraf lib",
-    "deploy-example": "node ./scripts/deployExample.js",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "postpublish": "npm run deploy-example",
-    "prepublishOnly": "npm run check && npm run build",
-    "start": "webpack --mode development -w --progress --config example/webpack.config.js",
-    "test": "karma start"
+  "_from": "react-bootstrap-typeahead",
+  "_id": "react-bootstrap-typeahead@3.4.5",
+  "_inBundle": false,
+  "_integrity": "sha512-accbqAcc7YLEiFSr+XfWfk0LamPZ8oU8VgYNcMpxk0Dt1JtctsuMoRQXRDs2JMS5W+g4r5zdx+qyYZ/bPCODoA==",
+  "_location": "/react-bootstrap-typeahead",
+  "_phantomChildren": {
+    "classnames": "2.2.6",
+    "dom-helpers": "3.4.0",
+    "fbjs": "0.8.17",
+    "gud": "1.0.0",
+    "loose-envify": "1.4.0",
+    "prop-types": "15.7.2",
+    "prop-types-extra": "1.1.0",
+    "react-transition-group": "2.9.0"
   },
-  "keywords": [
-    "auto complete",
-    "auto suggest",
-    "auto-complete",
-    "auto-suggest",
-    "autocomplete",
-    "autosuggest",
-    "bootstrap",
-    "bootstrap tokenizer",
-    "bootstrap typeahead",
-    "bootstrap-tokenizer",
-    "bootstrap-typeahead",
-    "react",
-    "react autocomplete",
-    "react autosuggest",
-    "react tokenizer",
-    "react typeahead",
-    "react-autocomplete",
-    "react-autosuggest",
-    "react-bootstrap",
-    "react-bootstrap-tokenizer",
-    "react-bootstrap-typeahead",
-    "react-tokenizer",
-    "react-typeahead",
-    "tokenizer",
-    "typeahead"
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-bootstrap-typeahead",
+    "name": "react-bootstrap-typeahead",
+    "escapedName": "react-bootstrap-typeahead",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
+  "_resolved": "https://registry.npmjs.org/react-bootstrap-typeahead/-/react-bootstrap-typeahead-3.4.5.tgz",
+  "_shasum": "634be2f90124b417e15c5f5b8d67ba4e362d00b7",
+  "_spec": "react-bootstrap-typeahead",
+  "_where": "C:\\xampp\\htdocs\\Roomsy\\tapechart\\frontend",
+  "author": {
+    "name": "ericgio"
+  },
+  "bugs": {
+    "url": "https://github.com/ericgio/react-bootstrap-typeahead/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "classnames": "^2.2.0",
     "create-react-context": "^0.2.3",
@@ -60,10 +51,8 @@
     "react-popper": "^1.0.0",
     "warning": "^4.0.1"
   },
-  "peerDependencies": {
-    "react": "^0.14.0 || ^15.2.0 || ^16.0.0",
-    "react-dom": "^0.14.0 || ^15.2.0 || ^16.0.0"
-  },
+  "deprecated": false,
+  "description": "React typeahead with Bootstrap styling",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
@@ -82,7 +71,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "es6-promise": "^4.0.5",
-    "eslint": "^6.0.1",
+    "eslint": "^5.1.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.15.0",
     "eslint-plugin-jsx-a11y": "^6.2.0",
@@ -115,9 +104,60 @@
     "webpack": "^4.6.0",
     "webpack-cli": "^3.1.0"
   },
+  "homepage": "https://github.com/ericgio/react-bootstrap-typeahead#readme",
+  "keywords": [
+    "auto complete",
+    "auto suggest",
+    "auto-complete",
+    "auto-suggest",
+    "autocomplete",
+    "autosuggest",
+    "bootstrap",
+    "bootstrap tokenizer",
+    "bootstrap typeahead",
+    "bootstrap-tokenizer",
+    "bootstrap-typeahead",
+    "react",
+    "react autocomplete",
+    "react autosuggest",
+    "react tokenizer",
+    "react typeahead",
+    "react-autocomplete",
+    "react-autosuggest",
+    "react-bootstrap",
+    "react-bootstrap-tokenizer",
+    "react-bootstrap-typeahead",
+    "react-tokenizer",
+    "react-typeahead",
+    "tokenizer",
+    "typeahead"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "react-bootstrap-typeahead",
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.2.0 || ^16.0.0",
+    "react-dom": "^0.14.0 || ^15.2.0 || ^16.0.0"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ericgio/react-bootstrap-typeahead.git"
+    "url": "git+https://github.com/ericgio/react-bootstrap-typeahead.git"
   },
-  "bugs": "https://github.com/ericgio/react-bootstrap-typeahead/issues"
+  "scripts": {
+    "build": "npm run clean && npm run build:css && npm run build:lib && npm run build:dist && npm run build:example",
+    "build:css": "node ./scripts/buildCSS.js",
+    "build:dist": "webpack --mode development && webpack --mode production",
+    "build:example": "webpack --mode production --config example/webpack.config.js",
+    "build:lib": "babel src --out-dir lib",
+    "check": "npm run lint && npm test",
+    "clean": "rimraf css && rimraf dist && rimraf lib",
+    "deploy-example": "node ./scripts/deployExample.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "postpublish": "npm run deploy-example",
+    "prepublishOnly": "npm run check && npm run build",
+    "start": "webpack --mode development -w --progress --config example/webpack.config.js",
+    "test": "karma start"
+  },
+  "version": "3.4.5"
 }
